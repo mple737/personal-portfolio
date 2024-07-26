@@ -1,8 +1,12 @@
+//JS file for the contact form submisson
+
 
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
+
+        // Prevent default form submission
         
+        event.preventDefault(); 
         var form = this;
         var formData = new FormData(form);
         
@@ -12,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }).then(response => {
             if (response.ok) {
                 document.getElementById('submitSuccessMessage').classList.remove('d-none');
-                form.reset(); // Clear the form fields
+                // Clear the form fields
+                form.reset(); 
                 setTimeout(() => {
                     document.getElementById('submitSuccessMessage').classList.add('d-none');
                 }, 10000); // Hide success message after 5 seconds
