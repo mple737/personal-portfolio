@@ -82,7 +82,7 @@
 }
 
 body {
-  margin: 0;
+ 
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -11538,12 +11538,21 @@ textarea.form-control-lg {
 body,
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  
 }
 
 .bg-gradient-primary-to-secondary {
 
   background: linear-gradient(135deg, #3300cc 0%, #730080 50%,  #ff3300 100%);
 }
+
+.gradient-badge {
+  background: linear-gradient(45deg, #f44369, #3e3b92 ) !important;
+}
+
 
 .text-gradient {
   background: -webkit-linear-gradient(315deg, #3300cc 0%,  #ff3300 100%);
